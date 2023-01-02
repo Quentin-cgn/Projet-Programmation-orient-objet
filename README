@@ -1,0 +1,32 @@
+Ensimag 2A POO - TP 2022/23
+============================
+
+Projet réalisé par équipe de trois
+
+- src: contient les packages contenant les différentes classes nécéssaires aux projets
+  -> carte
+  -> enums
+  -> evenement
+  -> incendies
+  -> io
+  -> nouvellesExeption
+  -> robots
+  -> simulation
+
+- cartes: quelques exemples de fichiers de donnees, nous avons en plus créé une autre carte
+
+- bin/gui.jar: archive Java contenant les classes de l'interface graphique.
+
+- doc: la documentation (API) des classes de l'interface graphique contenues dans gui.jar. Point d'entrée: index.html
+
+- Makefile 
+
+Pour executer le test final qui est TestEteintTout il suffit de lancer la commande :
+  make && make exeEteintTout
+
+On peut changer la carte en allant dans le test et en modifiant "./cartes/carteCration.map" par le chemin de la carte voulue
+
+Pour executer les autres tests il faut lancer les commandes :
+- make && make exeAffichage -> test l'affichage
+- make && make exeScenario0 -> test la sortie d'un robot de la carte
+- make && make exeScenario1 -> test l'extinction d'un incendie
